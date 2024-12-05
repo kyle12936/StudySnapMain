@@ -8,7 +8,7 @@ const deckRoutes = require('./routes/decks');
 
 dotenv.config();
 
-const hostname = 'https://ec2-54-145-157-50.compute-1.amazonaws.com/'
+const hostname = 'ec2-54-145-157-50.compute-1.amazonaws.com/'
 const app = express();
 
 app.use(cors({
