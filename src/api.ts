@@ -1,1 +1,1 @@
-export const apiBaseUrl = 'https://54.145.157.50:80';
+export const apiBaseUrl = 'https://study.knightsthegerbxyz.online:3000';

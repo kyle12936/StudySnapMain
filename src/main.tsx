@@ -4,14 +4,11 @@ import './index.css'
 import App from './App.tsx'
 import Login from './Login.tsx';
 import Register from './Register.tsx';
-import ProtectedRoute from './ProtectedRoute.tsx';
 import Dashboard from './Dashboard.tsx';
 import { AuthProvider } from './AuthProvider.tsx';
 import { UserProvider } from './UserContext.tsx';
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 import Deck from './Deck.tsx';
-import { User } from 'lucide-react';
-
 
 
 const router = createBrowserRouter([

@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "./components/ui/card";
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "./components/ui/card";
 import { useUser } from "./UserContext";
 import Logout from "./components/ui/Logout";
 import { Button } from "./components/ui/button";
@@ -37,7 +37,7 @@ export default function Dashboard(){
                 }
                 const data = await response.json();
                 console.log(data.decks);
-                setDecks((prevDecks) => data.decks); // Update state with fetched data
+                setDecks(() => data.decks); // Update state with fetched data
                 console.log(decks)
             } catch (err) {
                 console.log(err); // Update error state if fetch fails
