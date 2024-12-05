@@ -29,5 +29,5 @@ app.use('/api/auth', authRoutes);
 app.use('/api/decks', deckRoutes); // Use deck routes
 
 // Start server
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 80;
 app.listen(PORT, hostname, () => console.log(`Server running on port ${PORT}`));
